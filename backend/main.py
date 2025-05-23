@@ -1,5 +1,6 @@
+from backend.models import auth, cart, order
 from fastapi import FastAPI
-from backend.routes import order, products, cart, auth
+from backend.routes import products
 
 app = FastAPI()
 

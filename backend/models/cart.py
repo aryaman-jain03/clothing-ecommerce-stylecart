@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-from models import CartItem
 from pydantic import BaseModel
 
 class CartItem(BaseModel):

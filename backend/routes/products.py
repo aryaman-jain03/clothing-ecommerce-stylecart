@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 import json
-from ..db.models.products import Product 
+from backend.routes.products import Product
 from pathlib import Path
 
 router = APIRouter()

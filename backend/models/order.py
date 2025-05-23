@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-from models import Order
 from pydantic import BaseModel
 from typing import List
 from .cart import CartItem
