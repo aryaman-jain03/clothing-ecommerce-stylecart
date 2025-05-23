@@ -1,0 +1,203 @@
+[
+    {
+      "id": 101,
+      "name": "Classic White T-Shirt",
+      "category": "Tops",
+      "price": 499,
+      "image": "https://dummyimage.com/300x400/ffffff/000000&text=White+T-Shirt",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Comfortable cotton t-shirt, unisex design"
+    },
+    {
+      "id": 102,
+      "name": "Blue Denim Jeans",
+      "category": "Jeans",
+      "price": 1199,
+      "image": "https://dummyimage.com/300x400/87ceeb/000000&text=Denim+Jeans",
+      "sizes": ["30", "32", "34", "36"],
+      "inStock": true,
+      "description": "Regular fit blue denim jeans"
+    },
+    {
+      "id": 103,
+      "name": "Red Hoodie",
+      "category": "Hoodies",
+      "price": 899,
+      "image": "https://dummyimage.com/300x400/ff0000/ffffff&text=Red+Hoodie",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Cozy red hoodie with kangaroo pocket"
+    },
+    {
+      "id": 104,
+      "name": "Floral Summer Dress",
+      "category": "Dresses",
+      "price": 1499,
+      "image": "https://dummyimage.com/300x400/ff69b4/ffffff&text=Summer+Dress",
+      "sizes": ["S", "M", "L"],
+      "inStock": true,
+      "description": "Lightweight floral dress, perfect for summer"
+    },
+    {
+      "id": 105,
+      "name": "Black Leather Jacket",
+      "category": "Jackets",
+      "price": 2999,
+      "image": "https://dummyimage.com/300x400/000000/ffffff&text=Leather+Jacket",
+      "sizes": ["M", "L", "XL"],
+      "inStock": true,
+      "description": "Classic black leather biker jacket"
+    },
+    {
+      "id": 106,
+      "name": "Grey Sweatpants",
+      "category": "Bottoms",
+      "price": 699,
+      "image": "https://dummyimage.com/300x400/cccccc/000000&text=Sweatpants",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Comfortable grey sweatpants for everyday wear"
+    },
+    {
+      "id": 107,
+      "name": "White Sneakers",
+      "category": "Footwear",
+      "price": 1299,
+      "image": "https://dummyimage.com/300x400/ffffff/000000&text=Sneakers",
+      "sizes": ["7", "8", "9", "10"],
+      "inStock": true,
+      "description": "Minimalist white sneakers for any outfit"
+    },
+    {
+      "id": 108,
+      "name": "Striped Polo Shirt",
+      "category": "Tops",
+      "price": 799,
+      "image": "https://dummyimage.com/300x400/008080/ffffff&text=Polo+Shirt",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Casual striped polo shirt with collar"
+    },
+    {
+      "id": 109,
+      "name": "Blue Checked Shirt",
+      "category": "Tops",
+      "price": 999,
+      "image": "https://dummyimage.com/300x400/0000ff/ffffff&text=Checked+Shirt",
+      "sizes": ["M", "L", "XL"],
+      "inStock": true,
+      "description": "Full sleeve blue checked shirt"
+    },
+    {
+      "id": 110,
+      "name": "Jogger Pants",
+      "category": "Bottoms",
+      "price": 749,
+      "image": "https://dummyimage.com/300x400/a9a9a9/000000&text=Joggers",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Athleisure joggers with tapered fit"
+    },
+    {
+      "id": 111,
+      "name": "Khaki Shorts",
+      "category": "Bottoms",
+      "price": 549,
+      "image": "https://dummyimage.com/300x400/d2b48c/000000&text=Khaki+Shorts",
+      "sizes": ["S", "M", "L"],
+      "inStock": true,
+      "description": "Casual khaki shorts with drawstring"
+    },
+    {
+      "id": 112,
+      "name": "Green Parka Jacket",
+      "category": "Jackets",
+      "price": 2599,
+      "image": "https://dummyimage.com/300x400/228b22/ffffff&text=Parka+Jacket",
+      "sizes": ["M", "L", "XL"],
+      "inStock": true,
+      "description": "Warm green parka for winter"
+    },
+    {
+      "id": 113,
+      "name": "Black Skinny Jeans",
+      "category": "Jeans",
+      "price": 1199,
+      "image": "https://dummyimage.com/300x400/000000/ffffff&text=Skinny+Jeans",
+      "sizes": ["30", "32", "34", "36"],
+      "inStock": true,
+      "description": "Slim fit black jeans for all occasions"
+    },
+    {
+      "id": 114,
+      "name": "Long Sleeve Henley",
+      "category": "Tops",
+      "price": 649,
+      "image": "https://dummyimage.com/300x400/708090/ffffff&text=Henley+Shirt",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Soft cotton henley for casual wear"
+    },
+    {
+      "id": 115,
+      "name": "Printed Midi Dress",
+      "category": "Dresses",
+      "price": 1599,
+      "image": "https://dummyimage.com/300x400/f08080/000000&text=Printed+Dress",
+      "sizes": ["S", "M", "L"],
+      "inStock": true,
+      "description": "Chic printed midi dress with flowy fabric"
+    },
+    {
+      "id": 116,
+      "name": "Basic Tank Top",
+      "category": "Tops",
+      "price": 399,
+      "image": "https://dummyimage.com/300x400/ffffff/000000&text=Tank+Top",
+      "sizes": ["S", "M", "L"],
+      "inStock": true,
+      "description": "Sleeveless cotton tank top for layering"
+    },
+    {
+      "id": 117,
+      "name": "Navy Blue Hoodie",
+      "category": "Hoodies",
+      "price": 899,
+      "image": "https://dummyimage.com/300x400/000080/ffffff&text=Blue+Hoodie",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Warm and soft hoodie in navy blue"
+    },
+    {
+      "id": 118,
+      "name": "Denim Jacket",
+      "category": "Jackets",
+      "price": 1999,
+      "image": "https://dummyimage.com/300x400/1e90ff/ffffff&text=Denim+Jacket",
+      "sizes": ["M", "L", "XL"],
+      "inStock": true,
+      "description": "Stylish blue denim jacket"
+    },
+    {
+      "id": 119,
+      "name": "White Chinos",
+      "category": "Bottoms",
+      "price": 1099,
+      "image": "https://dummyimage.com/300x400/ffffff/000000&text=White+Chinos",
+      "sizes": ["30", "32", "34", "36"],
+      "inStock": true,
+      "description": "Formal white chinos for office or outings"
+    },
+    {
+      "id": 120,
+      "name": "Graphic Tee",
+      "category": "Tops",
+      "price": 599,
+      "image": "https://dummyimage.com/300x400/ff8c00/ffffff&text=Graphic+Tee",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Bold graphic print t-shirt"
+    }
+  ]
+  
