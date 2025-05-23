@@ -1,5 +1,15 @@
 from fastapi import APIRouter
 from models import Order
+from pydantic import BaseModel
+from typing import List
+from .cart import CartItem
+
+class Order(BaseModel):
+    id: int
+    user_id: int
+    items: List[CartItem]
+    total_price: float
+
 
 router = APIRouter()
 orders_db = []

@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from models import Product
 import json
+from ..db.models.products import Product 
 from pathlib import Path
 
 router = APIRouter()

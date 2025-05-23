@@ -1,5 +1,8 @@
 from pydantic import BaseModel
 from typing import List, Optional
+from . import Product
+
+
 
 class Product(BaseModel):
     id: int
