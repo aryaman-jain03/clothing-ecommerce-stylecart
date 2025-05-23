@@ -1,0 +1,53 @@
+[
+    {
+      "id": 101,
+      "name": "Classic White T-Shirt",
+      "category": "Tops",
+      "price": 499,
+      "image": "https://dummyimage.com/white-shirt.jpg",
+      "sizes": ["S", "M", "L", "XL"],
+      "inStock": true,
+      "description": "Comfortable cotton t-shirt, unisex design"
+    },
+    {
+      "id": 102,
+      "name": "Blue Denim Jeans",
+      "category": "Bottoms",
+      "price": 999,
+      "image": "https://dummyimage.com/blue-jeans.jpg",
+      "sizes": ["28", "30", "32", "34"],
+      "inStock": true,
+      "description": "Slim fit denim jeans for everyday wear"
+    },
+    {
+      "id": 103,
+      "name": "Red Hoodie",
+      "category": "Hoodies",
+      "price": 1299,
+      "image": "https://dummyimage.com/red-hoodie.jpg",
+      "sizes": ["M", "L", "XL"],
+      "inStock": true,
+      "description": "Warm fleece hoodie, perfect for winter"
+    },
+    {
+      "id": 104,
+      "name": "Summer Dress",
+      "category": "Dresses",
+      "price": 899,
+      "image": "https://dummyimage.com/summer-dress.jpg",
+      "sizes": ["S", "M", "L"],
+      "inStock": true,
+      "description": "Lightweight dress for warm days"
+    },
+    {
+      "id": 105,
+      "name": "Black Bomber Jacket",
+      "category": "Jackets",
+      "price": 1499,
+      "image": "https://dummyimage.com/black-jacket.jpg",
+      "sizes": ["M", "L", "XL"],
+      "inStock": false,
+      "description": "Trendy bomber jacket with zipper pockets"
+    }
+  ]
+  
