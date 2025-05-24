@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -7,22 +8,25 @@ const HomePage = () => {
   useEffect(() => {
     axios.get("http://localhost:8000/products")
       .then(res => setProducts(res.data))
-      .catch(err => console.error(err));
+      .catch(err => console.error("Error fetching products:", err));
   }, []);
 
   return (
     <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Our Products</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <h1 className="text-2xl font-bold mb-4">Our Products</h1>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {products.map(product => (
-          <div key={product.id} className="border rounded-lg p-4 shadow hover:shadow-lg transition">
-            <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded" />
-            <h2 className="text-xl font-semibold mt-2">{product.name}</h2>
-            <p className="text-gray-600">₹{product.price}</p>
-            <button className="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Add to Cart
-            </button>
-          </div>
+          <Link key={product.id} to={`/products/${product.id}`}>
+            <div className="border p-4 rounded hover:shadow-md bg-white">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-48 object-cover mb-2"
+              />
+              <h2 className="font-semibold">{product.name}</h2>
+              <p>₹{product.price}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -30,4 +34,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
