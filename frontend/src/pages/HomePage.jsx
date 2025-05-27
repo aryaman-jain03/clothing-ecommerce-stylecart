@@ -18,20 +18,28 @@ const HomePage = () => {
     <div className="p-6 space-y-12">
   
 {/* ✅ Hero Section */}
-<section className="bg-gray-50 rounded-lg p-10 text-center shadow">
-  <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-800">
+<section
+  className="bg-cover bg-center text-white rounded-lg p-10 text-center shadow"
+  style={{
+    backgroundImage:
+      "url('https://plus.unsplash.com/premium_photo-1664202525979-80d1da46b34b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNsb3RoaW5nJTIwc3RvcmV8ZW58MHx8MHx8fDA%3D')",
+      height: '500px',
+  }}
+>
+  <h1 className="text-4xl md:text-5xl font-extrabold mb-8 drop-shadow">
     Find Your Style
   </h1>
-  <p className="text-gray-600 mb-6 text-lg">
+  <p className="mb-6 text-lg drop-shadow">
     Discover the latest trends in fashion for Men & Women.
   </p>
   <Link
     to="/products"
-    className="inline-block bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition"
+    className="inline-block bg-black bg-opacity-80 text-white px-6 py-3 rounded hover:bg-opacity-100 transition"
   >
     Shop Now
   </Link>
 </section>
+
       {/* ✅ What's New Section */}
       <section className="bg-gray-50 p-6 rounded-lg shadow-inner">
   <h2 className="text-2xl font-bold mb-4 border-b-2 border-gray-200 pb-2">

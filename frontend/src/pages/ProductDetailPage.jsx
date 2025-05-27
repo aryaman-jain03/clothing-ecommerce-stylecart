@@ -1,58 +1,44 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
-import { Link, useLocation } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
-const AllProductsPage = () => {
-  const [products, setProducts] = useState([]);
+const ProductDetailPage = () => {
+  const { id } = useParams();
   const { addToCart } = useCart();
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
-  const category = queryParams.get("category");
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/products")
-      .then((res) => {
-        const filtered = category
-          ? res.data.filter((p) => p.category === category)
-          : res.data;
-        setProducts(filtered);
-      })
-      .catch((err) => console.error("Error fetching products:", err));
-  }, [category]);
+      .get(`http://localhost:8000/products/${id}`)
+      .then((res) => setProduct(res.data))
+      .catch((err) => console.error("Error loading product:", err));
+  }, [id]);
+
+  if (!product) return <p className="p-6">Loading...</p>;
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6 text-center">All Products</h1>
-
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {products.map((product) => (
-          <div
-          key={product.id}
-          className="bg-white border rounded-lg shadow hover:shadow-md transition duration-200 p-3 text-sm"
-        >
-          <Link to={`/products/${product.id}`}>
-            <img
-              src={product.image}
-              alt={product.name}
-              className="h-32 w-full object-cover mb-2 rounded"
-            />
-            <h3 className="font-semibold text-gray-800 text-base">{product.name}</h3>
-            <p className="text-gray-600 text-sm mb-1">₹{product.price}</p>
-          </Link>
-        
+    <div className="p-6 max-w-4xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-6">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full md:w-1/2 h-96 object-cover rounded"
+        />
+        <div className="flex flex-col gap-4">
+          <h1 className="text-3xl font-bold">{product.name}</h1>
+          <p className="text-gray-700 text-lg">₹{product.price}</p>
+          <p className="text-sm text-gray-600">{product.description}</p>
           <button
             onClick={() => addToCart(product)}
-            className="w-full bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
+            className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-fit"
           >
             Add to Cart
           </button>
         </div>
-        ))}
       </div>
     </div>
   );
 };
 
-export default AllProductsPage;
+export default ProductDetailPage;
