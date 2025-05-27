@@ -7,6 +7,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 from backend.routes import auth
+
+app.include_router(auth.router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],  # allow your frontend origin

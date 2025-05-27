@@ -4,12 +4,9 @@ from backend.services.auth import signup, login
 
 router = APIRouter()
 
-@router.post("/auth/signup", tags=["Auth"])
-def register_user(user: UserCreate):
-    new_user = signup(user)
-    if not new_user:
-        raise HTTPException(status_code=400, detail="Email already registered")
-    return {"msg": "User created successfully", "user": new_user}
+@router.post("/signup")
+def signup(user: UserCreate):
+    return {"message": "User created successfully"}
 
 @router.post("/auth/login", tags=["Auth"])
 def login_user(user: UserLogin):

@@ -50,7 +50,7 @@
       "description": "Trendy cargo pants with zipper pockets"
     },
     {
-      "id": 101,
+      "id": 106,
       "name": "Classic White T-Shirt",
       "category": "Tops",
       "price": 499,
@@ -60,7 +60,7 @@
       "description": "Comfortable cotton t-shirt, unisex design"
     },
     {
-      "id": 102,
+      "id": 107,
       "name": "Blue Denim Jeans",
       "category": "Bottoms",
       "price": 999,
@@ -70,7 +70,7 @@
       "description": "Slim fit denim jeans for everyday wear"
     },
     {
-      "id": 103,
+      "id": 108,
       "name": "Denim Jacket",
       "category": "Hoodies",
       "price": 1299,
@@ -80,7 +80,7 @@
       "description": "Warm fleece jacket, perfect for winter"
     },
     {
-      "id": 104,
+      "id": 109,
       "name": "Denim Shirt",
       "category": "Tops",
       "price": 899,
@@ -90,7 +90,7 @@
       "description": "Lightweight shirt for warm days"
     },
     {
-      "id": 105,
+      "id": 110,
       "name": "Cargo Pants",
       "category": "Bottoms",
       "price": 1499,
